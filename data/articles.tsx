@@ -1,6 +1,56 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "types-of-khmer-foods",
+        "title": "Exploring the Diverse Types of Khmer Foods",
+        "date": "2025-06-24",
+        "khmer": [
+            "ម្ហូបខ្មែរមានភាពសម្បូរបែបយ៉ាងខ្លាំង ដោយប្រើគ្រឿងទេសក្រអូប និងគ្រឿងផ្សំក្នុងតំបន់ដូចជាត្រីសាប និងដំណើបបន្លែ។ វាប្រហែលជាផ្សំពីរសជាតិផ្អែម ប្រៃ ជូរ និងជ្រក់ខ្លះៗ។",
+            "ប្រភេទម្ហូបមានច្រើនជួរ ដូចជា សម្លម្ជូរ សម្លកកូរ និងសម្លការីស្រស់ឆ្ងាញ់, ម្ហូបអាំងដូចជា បាយសាច់ជ្រូក និងត្រីអាំងជាមួយទឹកម្ទេស, ហើយម្ហូបអាហារថ្ងៃព្រងប់ដូចជា បបរសាច់ជ្រូក និងគុយទាវ។",
+            "បង្អែមខ្មែរដែលគេស្គាល់មាន ចេកចំហុយ និងបង្អែមលួង, ខណៈដែលគ្រឿងក្រូឃឆ្នូត (Kroeung) ជាជាតិគ្រឿងសម្ងួនសំខាន់ក្នុងម្ហូបខ្មែរ។ ម្ហូបខ្មែរមានលក្ខណៈឆ្ងាញ់មិនសូវហឹរ ដូចម្ដេចជាមួយម្ហូបថៃ។"
+        ],
+        "english": [
+            "Khmer cuisine is known for its rich variety, using aromatic herbs, freshwater fish, and local vegetables. The flavors are typically a balanced mix of sweet, salty, sour, and a mild tanginess.",
+            "Common categories of dishes include soups like samlor machu, samlor korko, and Khmer curry (samlor kari); grilled favorites like bai sach chrouk and grilled fish with chili dip; and breakfast items like pork rice porridge (bobor sach chrouk) and kuy teav (rice noodle soup).",
+            "Popular desserts include steamed banana (chek chamhuy) and num l’peou (mung bean pudding). A key ingredient in many savory dishes is kroeung, a fragrant spice paste. Compared to Thai cuisine, Khmer dishes tend to be less spicy but deeply flavorful."
+        ],
+        "transliteration": [
+            "Mahoob Khmer mean pheap sambor baep yang khlang, daoy praoe krueang tesh krawob ning krueang psom knong damban doch jea trei sap ning damnaeb bonslai. Vea brahael jea phsawmpi ros cheat p’aim, brai, chu, ning chruk khlah-khlah.",
+            "Prophet mahoob mean jeang chour doch jea samlor machu, samlor korko, ning samlor kari; mahoob ang doch jea bai sach chrouk ning trei ang chea mui teuk mtess; ning mahoob ahar thngai prongb doch jea bobor sach chrouk ning kuy teav.",
+            "Bong-aem Khmer del ke skol mean chek chamhuy ning num l’peou. Krueung Kroeung jea cheatei krueang samnguon somkhan knong mahoob Khmer. Mahoob Khmer mean lek khna chnganh min sov her doch jea mahoob Thai."
+        ],
+        "vocabulary": [
+            { "khmer": "គ្រឿងទេស", "english": "spices", "translit": "krueang tesh" },
+            { "khmer": "សម្លការី", "english": "Khmer curry", "translit": "samlor kari" },
+            { "khmer": "ត្រីអាំង", "english": "grilled fish", "translit": "trei ang" },
+            { "khmer": "ទឹកម្ទេស", "english": "chili dip", "translit": "teuk mtess" },
+            { "khmer": "អាហារពេលព្រឹក", "english": "breakfast", "translit": "ahar pel pruk" },
+            { "khmer": "បង្អែមលួង", "english": "mung bean pudding", "translit": "num l’peou" },
+            { "khmer": "ក្រូឃ", "english": "kroeung (herb paste)", "translit": "kroeung" },
+            { "khmer": "ឆ្ងាញ់", "english": "delicious", "translit": "chnganh" },
+            { "khmer": "មិនសូវហឹរ", "english": "not too spicy", "translit": "min sov her" },
+            { "khmer": "សម្បូរបែប", "english": "variety", "translit": "sambor baep" }
+        ],
+        "sources": [
+            {
+                "title": "Cambodian Food: 10 Traditional Dishes You Should Eat",
+                "url": "https://www.rainforestcruises.com/guides/cambodian-food"
+            },
+            {
+                "title": "Cambodian cuisine - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Cambodian_cuisine"
+            },
+            {
+                "title": "Kroeung - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Kroeung"
+            },
+            {
+                "title": "TCS World Travel – A Guide to Cambodian Cuisine",
+                "url": "https://www.tcsworldtravel.com/article/guide-cambodian-cuisine"
+            }
+        ]
+    },
+    {
         slug: 'sabaidee-fest-la-2025',
         title: 'Sabaidee Fest: Southeast Asian Music & Culture Celebrated in LA',
         date: '2025-07-12',
