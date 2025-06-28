@@ -1,6 +1,52 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "nato-defense-spending-2025",
+        "title": "NATO Leaders Agree to Major Increase in Defense Spending",
+        "date": "2025-06-25",
+        "khmer": [
+            "កំពូលមេដឹកនាំ NATO បានព្រមព្រៀងនឹងបង្កើនការចំណាយជាវារិទ្ធសម្រាប់ការពារទៅដល់5%នៃ GDP របស់ពួកគេ ដោយដំឡើងពីគោលដៅ2% ដែលបានកំណត់ពីឆ្នាំ2014។",
+            "ក្រោយសិក្ខាសាលានៅ Hague រហូតដល់ឆ្នាំ2035 ប្រទេសសមាជិកនឹងចំណាយ3.5%សម្រាប់យោធា និង1.5% សម្រាប់ឧបករណ៍សន្តិសុខផ្សេងទៀត ដូចជា វិស័យស៊ីបែរ និងហេដ្ឋារចនាសម្ព័ន្ធ។",
+            "សហភាពតួលេខគឺជាចំណុចប្រទាក់សម្រាប់ការពារសហគមន៍ (Article 5) និងកំណត់ថា ការចូលរួមនេះគឺជា «ភាពឯកជនរឹងមាំ» ក្នុងការពារសេរីភាពសម្រាប់សមាជិកទាំងអស់។"
+        ],
+        "english": [
+            "At the NATO summit in The Hague, leaders agreed to raise defense spending to 5% of GDP by 2035, up from the longstanding 2% target set in 2014. :contentReference[oaicite:1]{index=1}",
+            "The new breakdown sets 3.5% of GDP for core military capabilities and an additional 1.5% for broader security investments—such as cyber defense, infrastructure, and logistics. :contentReference[oaicite:2]{index=2}",
+            "NATO reaffirmed its 'ironclad' commitment to Article 5 collective defense, emphasizing that an attack on one ally is an attack on all—a unified message amid global uncertainty. :contentReference[oaicite:3]{index=3}"
+        ],
+        "transliteration": [
+            "Kompoul medeknoam NATO ban prohm preang nung bangkarn kar chnam yay chea vaarith som robos karpoar tol 5% nei GDP robos puok ke daoy damp learn pi goal doev 2% del ban kamnat pi chhnam 2014.",
+            "Kraoy sikkheasal nov The Hague rohout dol chhnam 2035, proteah samacheak neng chnam yay 3.5% samrab yothea ning 1.5% samrab oubpokar sanyas pheasa peak chea cyber defense, hedthar chhanh somrab kampechr, ning logistics.",
+            "Sahapeip toal akhiyas jea chnam ouy robos kar poar sahakum (Article 5) ning kamnat tha, kar chol ruom nih keu 'pheap ekachun ruongmam' knong kar poar seriyap samrab samacheak teang os."
+        ],
+        "vocabulary": [
+            { "khmer": "ការចំណាយ", "english": "spending", "translit": "kar chnam yay" },
+            { "khmer": "យោធា", "english": "military", "translit": "yothea" },
+            { "khmer": "សន្តិសុខ", "english": "security", "translit": "santeasok" },
+            { "khmer": "វិស័យស៊ីបែរ", "english": "cyber sector", "translit": "viseay cyber" },
+            { "khmer": "ហេដ្ឋារចនាសម្ព័ន្ធ", "english": "infrastructure", "translit": "hedthar chhanh somrab" },
+            { "khmer": "វិធានការ", "english": "measure/step", "translit": "vitean kar" },
+            { "khmer": "ប្រការទទួលខុសត្រូវរួម", "english": "collective responsibility", "translit": "prakaar totur khos roem" },
+            { "khmer": "ភាពឯកជនរឹងមាំ", "english": "ironclad", "translit": "pheap ekachun riong mam" },
+            { "khmer": "ស៊ីជម្រើន", "english": "progress", "translit": "see chomroen" },
+            { "khmer": "សមាគម", "english": "alliance", "translit": "samakom" }
+        ],
+        "sources": [
+            {
+                "title": "NATO commits to spending hike sought by Trump, and to mutual defence",
+                "url": "https://www.reuters.com/business/aerospace-defense/nato-leaders-set-back-trump-defence-spending-goal-hague-summit-2025-06-24/"
+            },
+            {
+                "title": "What is NATO's new 5% defence spending target?",
+                "url": "https://www.reuters.com/business/aerospace-defense/what-is-natos-new-5-defence-spending-target-2025-06-23/"
+            },
+            {
+                "title": "NATO leaders agree to hike military spending and restate 'ironclad commitment' to collective defense",
+                "url": "https://apnews.com/article/db0912cbfdaedc4c6b57809c9e11d6bd"
+            }
+        ]
+    },
+    {
         "slug": "types-of-khmer-foods",
         "title": "Exploring the Diverse Types of Khmer Foods",
         "date": "2025-06-24",
