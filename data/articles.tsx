@@ -1,6 +1,52 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "us-china-trade-stock-market-rally",
+        "title": "U.S.–China Rare‑Earth Deal Sends Wall Street to Record Highs",
+        "date": "2025-06-27",
+        "khmer": [
+            "ទីផ្សារអន្តរជាតិបានឡើងខ្ពស់នៅថ្ងៃទី ២៧ ខែមិថុនា ដោយសារព័ត៌មានអំពីកិច្ចព្រមព្រៀងពាណិជ្ជកម្មថ្មីរវាងសហរដ្ឋអាមេរិក និងប្រទេសចិន ដែលផ្តោតលើការនាំចេញធនធាន rare-earth។",
+            "កិច្ចព្រមព្រៀងបានបន្ធូរអាត្រាពន្ធនាំចេញ និងធានាថាសហរដ្ឋអាមេរិកអាចចូលដល់ធនធានសំខាន់ៗ បានធ្វើឱ្យមានទំនុកចិត្តពីភាគីវិនិយោគ។",
+            "នៅពេលเดียวគ្នា ការនាំចេញរថយន្តពីចក្រភពអង់គ្លេសទៅសហរដ្ឋអាមេរិកបានធ្លាក់ចុះ ៥០% បន្ទាប់ពីអាករថ្មី ២៥% តែសហរដ្ឋអាមេរិកបានលុបចោលអាករឆ្លើយតបជាសញ្ញាថានឹងគាំទ្រដល់អាជីវកម្មបរទេស។"
+        ],
+        "english": [
+            "Global markets surged on June 27 as optimism around a new U.S.–China trade deal—focused on rare‑earth exports—pushed the S&P 500 and Nasdaq to record highs.",
+            "The agreement eased tariffs and secured U.S. access to critical minerals, stoking investor confidence and offsetting concerns over domestic consumption and inflation.",
+            "Meanwhile, the UK suffered a steep 50% drop in car exports to the U.S. after new 25% tariffs, but Washington removed retaliatory 'revenge taxes', signaling support for foreign businesses."
+        ],
+        "transliteration": [
+            "Tiphisar antor cheat ban laeng khpos nov thngai ti 27 khai mithona doy sa poramean ompi kech prompreang pearnicheakamm thmey rovieng saharot americ ning proteh Chen del ptout leu kar noam cheut thonthhean rare-earth.",
+            "Kech prompreang ban bnthur atra phtor noam cheut ning theania tha saharot americ ach chol dol thonthhean somkhan-somkhan ban twer aoy mean tomnuk chet pi pheaki vinyoek.",
+            "Nov pel diel knea, kar noam cheut rothyon pi jakrapheab angkles tov saharot americ ban tlek choh 50% bontorb pi akar thmey 25%, tae saharot americ ban lop chol akar chlery tap jea sanhya tha neng keamtar dol aechiveakam borteh."
+        ],
+        "vocabulary": [
+            { "khmer": "កិច្ចព្រមព្រៀង", "english": "agreement", "translit": "kech prompreang" },
+            { "khmer": "ធនធាន", "english": "resource", "translit": "thonthhean" },
+            { "khmer": "ភាគហ៊ុន", "english": "stocks", "translit": "piakhun" },
+            { "khmer": "អាត្រាពន្ធ", "english": "tariff", "translit": "atra phtor" },
+            { "khmer": "នាំចេញ", "english": "export", "translit": "noam cheut" },
+            { "khmer": "វិនិយោគ", "english": "investment", "translit": "vinyoek" },
+            { "khmer": "សញ្ញា", "english": "signal", "translit": "sanhya" },
+            { "khmer": "ទំនុកចិត្ត", "english": "confidence", "translit": "tomnuk chet" },
+            { "khmer": "ចំណេះដឹងសេដ្ឋកិច្ច", "english": "economic insight", "translit": "chamnesdoeng sethakech" },
+            { "khmer": "ជំងឺផ្នត់គំនិត", "english": "inflation", "translit": "chomnguh phnot komnet" }
+        ],
+        "sources": [
+            {
+                "title": "Wall Street hits record high on trade deal hopes; UK car exports to US halve due to tariffs",
+                "url": "https://www.theguardian.com/business/live/2025/jun/27/us-10-trade-deals-trump-china-rare-earth-agreement-stock-market-oil-confidence-business-live-news-updates"
+            },
+            {
+                "title": "Morning Bid: Wall St flirts with new record",
+                "url": "https://www.reuters.com/business/finance/global-markets-view-usa-2025-06-27/"
+            },
+            {
+                "title": "5 Things to Know Before the Stock Market Opens",
+                "url": "https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-june-27-2025-11762393"
+            }
+        ]
+    },
+    {
         "slug": "nato-defense-spending-2025",
         "title": "NATO Leaders Agree to Major Increase in Defense Spending",
         "date": "2025-06-25",
@@ -10,9 +56,9 @@ export const articles = [
             "សហភាពតួលេខគឺជាចំណុចប្រទាក់សម្រាប់ការពារសហគមន៍ (Article 5) និងកំណត់ថា ការចូលរួមនេះគឺជា «ភាពឯកជនរឹងមាំ» ក្នុងការពារសេរីភាពសម្រាប់សមាជិកទាំងអស់។"
         ],
         "english": [
-            "At the NATO summit in The Hague, leaders agreed to raise defense spending to 5% of GDP by 2035, up from the longstanding 2% target set in 2014. :contentReference[oaicite:1]{index=1}",
-            "The new breakdown sets 3.5% of GDP for core military capabilities and an additional 1.5% for broader security investments—such as cyber defense, infrastructure, and logistics. :contentReference[oaicite:2]{index=2}",
-            "NATO reaffirmed its 'ironclad' commitment to Article 5 collective defense, emphasizing that an attack on one ally is an attack on all—a unified message amid global uncertainty. :contentReference[oaicite:3]{index=3}"
+            "At the NATO summit in The Hague, leaders agreed to raise defense spending to 5% of GDP by 2035, up from the longstanding 2% target set in 2014.",
+            "The new breakdown sets 3.5% of GDP for core military capabilities and an additional 1.5% for broader security investments—such as cyber defense, infrastructure, and logistics.",
+            "NATO reaffirmed its 'ironclad' commitment to Article 5 collective defense, emphasizing that an attack on one ally is an attack on all—a unified message amid global uncertainty."
         ],
         "transliteration": [
             "Kompoul medeknoam NATO ban prohm preang nung bangkarn kar chnam yay chea vaarith som robos karpoar tol 5% nei GDP robos puok ke daoy damp learn pi goal doev 2% del ban kamnat pi chhnam 2014.",
