@@ -61,8 +61,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
 }
 
-export default function NewsArticlePage({ params }: { params: { slug: string } }) {
-    const article = articles.find((a) => a.slug === params.slug);
+interface PageProps {
+    params: Promise<{ slug: string }>;
+}
+
+export default async function NewsArticlePage({ params }: PageProps) {
+    const { slug } = await params;
+    const article = articles.find((a) => a.slug === slug);
 
     if (!article) return <div className="p-10 text-center text-red-700 font-medium">Article not found</div>;
 
