@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
 import { articles } from '@/data/articles';
 import React from 'react';
 import { Metadata } from 'next';
@@ -62,9 +61,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
 }
 
-export default function NewsArticlePage() {
-    const { slug } = useParams();
-    const article = articles.find((a) => a.slug === slug);
+export default function NewsArticlePage({ params }: { params: { slug: string } }) {
+    const article = articles.find((a) => a.slug === params.slug);
 
     if (!article) return <div className="p-10 text-center text-red-700 font-medium">Article not found</div>;
 
