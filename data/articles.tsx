@@ -359,6 +359,11 @@ export const articles = [
         slug: 'israel-iran-conflict-2025',
         title: 'Israel and Iran Escalate Attacks Amid Rising Tensions',
         date: '2025-06-15',
+        "image": {
+            "url": "/images/israel-iran-escalation-missiles-2025.png",
+            "alt": "Illustration of Iran firing missiles toward Israel amid escalating conflict, with civilians evacuating, G7 leaders calling for dialogue, and oil prices surging",
+            "caption": "A dramatic scene depicting Iran's missile response to Israeli airstrikes, global political reactions including warnings from former President Trump, and the resulting humanitarian and economic fallout."
+        },
         khmer: [
             'អ៊ីស្រាអែលបានវាយប្រហារយ៉ាងធ្ងន់ធ្ងរលើអ៊ីរ៉ង់រយៈពេលបីថ្ងៃជាប់ៗគ្នា ដោយវាយគោលដៅសំខាន់ៗដូចជាទីតាំងនុយក្លេអ៊ែរ កងយោធា និងមជ្ឈមណ្ឌលថាមពល។ ការវាយប្រហារនេះបានសម្លាប់អ្នកវិទ្យាសាស្ត្រនុយក្លេអ៊ែរជាច្រើន និងបុគ្គលសំខាន់ៗក្នុងកង IRGC។',
             'អ៊ីរ៉ង់បានឆ្លើយតបវិញដោយបាញ់មីស៊ីលជាង ២៧០គ្រាប់ទៅកាន់អ៊ីស្រាអែល ខណៈដែលអាជ្ញាធរអាមេរិកបានអះអាងថា ពួកគេមិនបានចូលរួមដោយផ្ទាល់នឹងការវាយប្រហារនេះទេ។ ប្រធានាធិបតីធ្រាំបានព្រមានអ៊ីរ៉ង់ពី "កម្លាំងយោធាអាមេរិក" ប្រសិនបើមានការគំរាមកំហែងដល់ផលប្រយោជន៍របស់សហរដ្ឋ។',
@@ -405,6 +410,11 @@ export const articles = [
         slug: 'global-coral-bleaching',
         title: 'Global Coral Reefs Face Record Bleaching',
         date: '2025-06-14',
+        "image": {
+            "url": "/images/global-coral-bleaching-2025.png",
+            "alt": "Illustration of coral bleaching showing a pale, ghostly coral surrounded by vibrant but threatened marine life, with arrows symbolizing rising ocean temperatures and a coral warning sign above the surface",
+            "caption": "A vivid depiction of the most widespread coral bleaching event ever recorded, driven by climate change and warming oceans, threatening marine ecosystems and global livelihoods."
+        },
         khmer: [
             'អ្នកវិទ្យាសាស្ត្រសមុទ្របានបញ្ជាក់ថា បាតុភូតផ្លាស់ប្តូរពណ៌ប៉ោលសមុទ្រដ៏ធំបំផុតត្រូវបានកំណត់ត្រាឡើង ដោយស្ថិតក្នុងសភាពធ្ងន់ធ្ងរពីសីតុណ្ហភាពសមុទ្រខ្ពស់ខុសធម្មតា ដែលប៉ះពាល់ដល់ប្រហែល ៨៤ ភាគរយនៃតំបន់ប៉ោលសមុទ្រទូទាំងពិភពលោក។ បាតុភូតនេះបានកើតឡើងចាប់តាំងពីដើមឆ្នាំ ២០២៣ ហើយឥឡូវនេះបានលើសវិបត្តិធ្ងន់ធ្ងរដទៃទៀតរួចមក។',
             'ការផ្លាស់ប្តូរពណ៌កើតឡើងនៅពេលប៉ោលសមុទ្របណ្តេញស្លែនដែលជួយបំរើជីវិតរបស់វា បណ្តាលឲ្យវាក្លាយទៅជាពណ៌ស ហើយងាយរងជំងឺនិងស្លាប់។ ការបាត់បង់ប៉ោលសមុទ្រយ៉ាងធំធេងនេះគឺជាភាពគំរាមកំហែងដល់ជីវចម្រុះសមុទ្រ និងជីវភាពរស់នៅរបស់មនុស្សរាប់រយលាននាក់ ដែលពឹងផ្អែកលើវាសម្រាប់អាហារ ទេសចរណ៍ និងការការពារឆ្នេរសមុទ្រ។',
