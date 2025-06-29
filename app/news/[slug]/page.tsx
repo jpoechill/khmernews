@@ -6,8 +6,9 @@ import { Metadata } from 'next';
 import ArticleHoverEffect from '@/components/ArticleHoverEffect';
 
 // Generate metadata for each article
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const article = articles.find((a) => a.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params;
+    const article = articles.find((a) => a.slug === slug);
 
     if (!article) {
         return {
