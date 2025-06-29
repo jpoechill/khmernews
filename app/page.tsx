@@ -2,11 +2,34 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { articles } from '@/data/articles';
 
 export default function NewsIndex() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = parseInt(entry.target.getAttribute('data-card-index') || '0');
+          if (entry.isIntersecting) {
+            setVisibleCards(prev => new Set([...prev, index]));
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    const cards = document.querySelectorAll('[data-card-index]');
+    cards.forEach(card => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, [viewMode]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -65,7 +88,17 @@ export default function NewsIndex() {
           <div className="grid gap-6 md:grid-cols-2 pt-4 lg:grid-cols-3">
             {articles.map((article, index) => (
               <Link key={article.slug} href={`/news/${article.slug}`}>
-                <article className="group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <article
+                  data-card-index={index}
+                  className={`group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-700 transform ${visibleCards.has(index)
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-8'
+                    }`}
+                  style={{
+                    transitionDelay: `${index * 100}ms`,
+                    transitionProperty: 'opacity, transform'
+                  }}
+                >
                   {/* Optional Image Thumbnail */}
                   {article.image && (
                     <div className="relative h-48 overflow-hidden">
@@ -147,7 +180,17 @@ export default function NewsIndex() {
           <div className="space-y-4">
             {articles.map((article, index) => (
               <Link key={article.slug} href={`/news/${article.slug}`}>
-                <div className="flex items-start gap-4 bg-white p-4 my-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition">
+                <div
+                  data-card-index={index}
+                  className={`flex items-start gap-4 bg-white p-4 my-4 border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-all duration-700 transform ${visibleCards.has(index)
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-8'
+                    }`}
+                  style={{
+                    transitionDelay: `${index * 100}ms`,
+                    transitionProperty: 'opacity, transform'
+                  }}
+                >
                   <div className="text-sm w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full text-white font-bold flex items-center justify-center">
                     {index + 1}
                   </div>

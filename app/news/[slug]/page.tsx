@@ -5,6 +5,63 @@ import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { articles } from '@/data/articles';
 import React, { useEffect } from 'react';
+import { Metadata } from 'next';
+
+// Generate metadata for each article
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+    const article = articles.find((a) => a.slug === params.slug);
+
+    if (!article) {
+        return {
+            title: 'Article Not Found - Khmer News Reader',
+            description: 'The requested article could not be found.',
+        };
+    }
+
+    const articleUrl = `https://khmernewsreader.com/news/${article.slug}`;
+    const imageUrl = article.image ? `https://khmernewsreader.com${article.image.url}` : 'https://khmernewsreader.com/og-image.png';
+
+    return {
+        title: `${article.title} - Khmer News Reader`,
+        description: `Read "${article.title}" in Khmer with English translation and transliteration. Practice Khmer language with real-world news articles.`,
+        keywords: [
+            'Khmer news',
+            'Cambodian news',
+            'Khmer language learning',
+            'Khmer reading practice',
+            article.title,
+            'Khmer translation',
+            'Khmer transliteration'
+        ],
+        openGraph: {
+            title: article.title,
+            description: `Read "${article.title}" in Khmer with English translation and transliteration.`,
+            url: articleUrl,
+            siteName: 'Khmer News Reader',
+            images: [
+                {
+                    url: imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: article.image?.alt || article.title,
+                },
+            ],
+            locale: 'en_US',
+            type: 'article',
+            publishedTime: article.date,
+            authors: ['Khmer News Reader Team'],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: article.title,
+            description: `Read "${article.title}" in Khmer with English translation and transliteration.`,
+            images: [imageUrl],
+        },
+        alternates: {
+            canonical: articleUrl,
+        },
+    };
+}
 
 export default function NewsArticlePage() {
     const { slug } = useParams();
@@ -112,6 +169,46 @@ export default function NewsArticlePage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+            {/* Structured Data for SEO */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": article.title,
+                        "description": `Read "${article.title}" in Khmer with English translation and transliteration.`,
+                        "image": article.image ? `https://khmernewsreader.com${article.image.url}` : "https://khmernewsreader.com/og-image.png",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "Khmer News Reader Team"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Khmer News Reader",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://khmernewsreader.com/logo.png"
+                            }
+                        },
+                        "datePublished": article.date,
+                        "dateModified": article.date,
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": `https://khmernewsreader.com/news/${article.slug}`
+                        },
+                        "inLanguage": ["en", "km"],
+                        "keywords": [
+                            "Khmer news",
+                            "Cambodian news",
+                            "Khmer language learning",
+                            "Khmer reading practice",
+                            article.title
+                        ]
+                    })
+                }}
+            />
+
             <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-10">
                 <div className="max-w-5xl mx-auto px-6 py-4">
                     <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-blue-700 hover:text-blue-900 transition-colors group">
