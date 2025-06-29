@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { articles } from '@/data/articles';
 
@@ -65,6 +66,19 @@ export default function NewsIndex() {
             {articles.map((article, index) => (
               <Link key={article.slug} href={`/news/${article.slug}`}>
                 <article className="group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                  {/* Optional Image Thumbnail */}
+                  {article.image && (
+                    <div className="relative h-48 overflow-hidden">
+                      <Image
+                        src={article.image.url}
+                        alt={article.image.alt}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        width={192}
+                        height={192}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                  )}
                   <div className="p-6 pb-4">
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
@@ -137,7 +151,19 @@ export default function NewsIndex() {
                   <div className="text-sm w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full text-white font-bold flex items-center justify-center">
                     {index + 1}
                   </div>
-                  <div>
+                  {/* Optional Image Thumbnail for List View */}
+                  {article.image && (
+                    <div className="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden">
+                      <Image
+                        src={article.image.url}
+                        alt={article.image.alt}
+                        className="w-full h-full object-cover"
+                        width={80}
+                        height={80}
+                      />
+                    </div>
+                  )}
+                  <div className="flex-1">
                     <h2 className="text-base font-semibold text-gray-900 mb-1">{article.title}</h2>
                     <p className="text-xs text-gray-500">{article.date}</p>
                     <div className="flex flex-wrap gap-2 mt-2 text-xs">

@@ -1,9 +1,66 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "khmer-thai-border-crisis",
+        "title": "Khmer–Thai Border Crisis Escalates Amid Skirmishes, Political Fallout",
+        "date": "2025-06-28",
+        "image": {
+            "url": "/images/khmer-thai-border.png",
+            "alt": "Cambodian and Thai border checkpoint with military personnel",
+            "caption": "Border checkpoint between Cambodia and Thailand showing increased military presence"
+        },
+        "khmer": [
+            "ការបែកគ្នារវាងកម្ពុជា និងថៃបង្កឡើងក្នុងវត្តមានថ្នាក់យោធា និងការរឹតបន្តឹងដែននៅថ្ងៃទី២៨ មិថុនា បន្ទាប់ពីមានការបាញ់គម្រប់ខ្លីៗនៅចុងខែមិថុនា និងការស្លាប់មន្ត្រីកម្ពុជាមួយនឹងការបិទដែនជាច្រើន។",
+            "ការលេចធ្លាយហ្វូនកសារ រវាងនាយករដ្ឋមន្រ្តីថៃ ផែតុងថាន និង ហ៊ុន សែន នាំឲ្យមានការវាយប្រហារពីជនជាតិថៃ ដែលដាក់ឲ្យនាងចាកចេញ។",
+            "លោក ហ៊ុន សែន និងលោក ហ៊ុន ម៉ាណែត បានចេញផ្សាយដំណឹងថានឹងទទួលសងការជាតិនេះតាមតុលាការICJ ខណៈថៃអះអាងថានឹងដោះស្រាយតាមការពិភាក្សាផ្ទាល់ពីរាជរដ្ឋាភិបាល។"
+        ],
+        "english": [
+            "Tensions have escalated on June 28 along the Cambodia–Thailand border following renewed military skirmishes in late May, including a Cambodian soldier's death, and multiple border checkpoint closures.",
+            "A leaked phone call between Thai Prime Minister Paetongtarn Shinawatra and former Cambodian leader Hun Sen has sparked nationalist outrage in Thailand, with thousands demanding her resignation.",
+            "Cambodian leaders, including Hun Sen and Hun Manet, have signaled intent to take the dispute to the International Court of Justice, while Thailand insists on resolving it bilaterally."
+        ],
+        "transliteration": [
+            "Kar bek knia rovang Kampuchea ning Thai bongk laeng nov vattihan thanak yothea ning kar rut bontueng daen nov thngai ti 28 mithona banorben nov kar banh korm khley chrey nov doch samrap changkea kroung chumnik ning kam robos morthi Kampuchea.",
+            "Kar lech tlay phone karsa rovang neayok rotthamontri Thai Paetongtarn ning Hun Sen naom oy mean kar vay prahar pi chon cheati Thai chea dae rajotnieang neang chark chen.",
+            "Lok Hun Sen ning Hun Manet ban chheuksay don soeng cheatei nih team to ICCJ knong kar lud srok, khnea Thai os cheang tha neng dohsa srav tov kar pipheaksa phear tver."
+        ],
+        "vocabulary": [
+            { "khmer": "សមាជិកយោធា", "english": "military personnel", "translit": "samachek yothea" },
+            { "khmer": "ការបិទដែន", "english": "border closure", "translit": "kar pit daen" },
+            { "khmer": "ការបាញ់គម្រប់", "english": "skirmish/fire exchange", "translit": "kar banh korm khley" },
+            { "khmer": "ហ្វូនកសារ", "english": "phone call", "translit": "phoon karsa" },
+            { "khmer": "ជនជាតិ", "english": "nationalist", "translit": "chon cheati" },
+            { "khmer": "សន្និសីទអន្តរជាតិ", "english": "International Court", "translit": "sannipset antorchheat" },
+            { "khmer": "ចរចាទ្វេភាគី", "english": "bilateral negotiations", "translit": "chorchah tvepheaki" },
+            { "khmer": "អាវុធនានា", "english": "armaments", "translit": "auvoth neanea" },
+            { "khmer": "ខេមរភាព", "english": "Cambodian sovereignty", "translit": "Khemrapheap" },
+            { "khmer": "អារម្មណ៍ជាតិនិយម", "english": "nationalistic sentiment", "translit": "arom cheati niyum" }
+        ],
+        "sources": [
+            {
+                "title": "Thousands demand Thai prime minister quit over border dispute",
+                "url": "https://www.reuters.com/world/asia-pacific/thai-protesters-call-prime-minister-paetongtarns-resignation-2025-06-28/"
+            },
+            {
+                "title": "Thailand pushes for diplomacy after ex‑Cambodia PM's 'extraordinary' attack",
+                "url": "https://www.reuters.com/world/asia-pacific/thailand-pushes-diplomacy-after-ex-cambodia-pms-extraordinary-attack-2025-06-27/"
+            },
+            {
+                "title": "2025 Cambodian–Thai border crisis",
+                "url": "https://en.wikipedia.org/wiki/2025_Cambodian%E2%80%93Thai_border_crisis"
+            }
+        ]
+    }
+    ,
+    {
         "slug": "us-china-trade-stock-market-rally",
         "title": "U.S.–China Rare‑Earth Deal Sends Wall Street to Record Highs",
         "date": "2025-06-27",
+        "image": {
+            "url": "/images/us-china-trade-deal-market-impact-illustration.png",
+            "alt": "Illustration of U.S.–China trade agreement boosting global markets, with stock charts, rare-earth symbols, and contrasting UK export decline",
+            "caption": "A symbolic depiction of the June 27 global market surge sparked by a U.S.–China trade deal on rare-earth exports, alongside the decline in UK car exports due to new U.S. tariffs."
+        },
         "khmer": [
             "ទីផ្សារអន្តរជាតិបានឡើងខ្ពស់នៅថ្ងៃទី ២៧ ខែមិថុនា ដោយសារព័ត៌មានអំពីកិច្ចព្រមព្រៀងពាណិជ្ជកម្មថ្មីរវាងសហរដ្ឋអាមេរិក និងប្រទេសចិន ដែលផ្តោតលើការនាំចេញធនធាន rare-earth។",
             "កិច្ចព្រមព្រៀងបានបន្ធូរអាត្រាពន្ធនាំចេញ និងធានាថាសហរដ្ឋអាមេរិកអាចចូលដល់ធនធានសំខាន់ៗ បានធ្វើឱ្យមានទំនុកចិត្តពីភាគីវិនិយោគ។",
@@ -50,6 +107,11 @@ export const articles = [
         "slug": "nato-defense-spending-2025",
         "title": "NATO Leaders Agree to Major Increase in Defense Spending",
         "date": "2025-06-25",
+        "image": {
+            "url": "/images/nato-defense-spending-summit-illustration.png",
+            "alt": "Illustration of NATO leaders at a summit in The Hague announcing increased defense spending to 5% of GDP, with a speaker, military symbols, and The Hague skyline in the background",
+            "caption": "A digital illustration representing the NATO summit in The Hague, where leaders agreed to boost defense spending to 5% of GDP by 2035, reaffirming their collective security commitments amid growing global tensions."
+        },
         "khmer": [
             "កំពូលមេដឹកនាំ NATO បានព្រមព្រៀងនឹងបង្កើនការចំណាយជាវារិទ្ធសម្រាប់ការពារទៅដល់5%នៃ GDP របស់ពួកគេ ដោយដំឡើងពីគោលដៅ2% ដែលបានកំណត់ពីឆ្នាំ2014។",
             "ក្រោយសិក្ខាសាលានៅ Hague រហូតដល់ឆ្នាំ2035 ប្រទេសសមាជិកនឹងចំណាយ3.5%សម្រាប់យោធា និង1.5% សម្រាប់ឧបករណ៍សន្តិសុខផ្សេងទៀត ដូចជា វិស័យស៊ីបែរ និងហេដ្ឋារចនាសម្ព័ន្ធ។",
@@ -96,6 +158,11 @@ export const articles = [
         "slug": "types-of-khmer-foods",
         "title": "Exploring the Diverse Types of Khmer Foods",
         "date": "2025-06-24",
+        "image": {
+            "url": "/images/khmer-cuisine-assortment-illustration.png",
+            "alt": "Overhead view of assorted Khmer dishes including soups, grilled meats, rice porridge, noodle soup, desserts, herbs, and spices arranged on a rustic wooden table",
+            "caption": "A colorful and inviting display of traditional Khmer cuisine, showcasing the diversity of flavors with dishes like samlor machu, bai sach chrouk, kuy teav, steamed banana, and fragrant kroeung paste."
+        },
         "khmer": [
             "ម្ហូបខ្មែរមានភាពសម្បូរបែបយ៉ាងខ្លាំង ដោយប្រើគ្រឿងទេសក្រអូប និងគ្រឿងផ្សំក្នុងតំបន់ដូចជាត្រីសាប និងដំណើបបន្លែ។ វាប្រហែលជាផ្សំពីរសជាតិផ្អែម ប្រៃ ជូរ និងជ្រក់ខ្លះៗ។",
             "ប្រភេទម្ហូបមានច្រើនជួរ ដូចជា សម្លម្ជូរ សម្លកកូរ និងសម្លការីស្រស់ឆ្ងាញ់, ម្ហូបអាំងដូចជា បាយសាច់ជ្រូក និងត្រីអាំងជាមួយទឹកម្ទេស, ហើយម្ហូបអាហារថ្ងៃព្រងប់ដូចជា បបរសាច់ជ្រូក និងគុយទាវ។",
@@ -104,12 +171,12 @@ export const articles = [
         "english": [
             "Khmer cuisine is known for its rich variety, using aromatic herbs, freshwater fish, and local vegetables. The flavors are typically a balanced mix of sweet, salty, sour, and a mild tanginess.",
             "Common categories of dishes include soups like samlor machu, samlor korko, and Khmer curry (samlor kari); grilled favorites like bai sach chrouk and grilled fish with chili dip; and breakfast items like pork rice porridge (bobor sach chrouk) and kuy teav (rice noodle soup).",
-            "Popular desserts include steamed banana (chek chamhuy) and num l’peou (mung bean pudding). A key ingredient in many savory dishes is kroeung, a fragrant spice paste. Compared to Thai cuisine, Khmer dishes tend to be less spicy but deeply flavorful."
+            "Popular desserts include steamed banana (chek chamhuy) and num l'peou (mung bean pudding). A key ingredient in many savory dishes is kroeung, a fragrant spice paste. Compared to Thai cuisine, Khmer dishes tend to be less spicy but deeply flavorful."
         ],
         "transliteration": [
-            "Mahoob Khmer mean pheap sambor baep yang khlang, daoy praoe krueang tesh krawob ning krueang psom knong damban doch jea trei sap ning damnaeb bonslai. Vea brahael jea phsawmpi ros cheat p’aim, brai, chu, ning chruk khlah-khlah.",
+            "Mahoob Khmer mean pheap sambor baep yang khlang, daoy praoe krueang tesh krawob ning krueang psom knong damban doch jea trei sap ning damnaeb bonslai. Vea brahael jea phsawmpi ros cheat p'aim, brai, chu, ning chruk khlah-khlah.",
             "Prophet mahoob mean jeang chour doch jea samlor machu, samlor korko, ning samlor kari; mahoob ang doch jea bai sach chrouk ning trei ang chea mui teuk mtess; ning mahoob ahar thngai prongb doch jea bobor sach chrouk ning kuy teav.",
-            "Bong-aem Khmer del ke skol mean chek chamhuy ning num l’peou. Krueung Kroeung jea cheatei krueang samnguon somkhan knong mahoob Khmer. Mahoob Khmer mean lek khna chnganh min sov her doch jea mahoob Thai."
+            "Bong-aem Khmer del ke skol mean chek chamhuy ning num l'peou. Krueung Kroeung jea cheatei krueang samnguon somkhan knong mahoob Khmer. Mahoob Khmer mean lek khna chnganh min sov her doch jea mahoob Thai."
         ],
         "vocabulary": [
             { "khmer": "គ្រឿងទេស", "english": "spices", "translit": "krueang tesh" },
@@ -117,7 +184,7 @@ export const articles = [
             { "khmer": "ត្រីអាំង", "english": "grilled fish", "translit": "trei ang" },
             { "khmer": "ទឹកម្ទេស", "english": "chili dip", "translit": "teuk mtess" },
             { "khmer": "អាហារពេលព្រឹក", "english": "breakfast", "translit": "ahar pel pruk" },
-            { "khmer": "បង្អែមលួង", "english": "mung bean pudding", "translit": "num l’peou" },
+            { "khmer": "បង្អែមលួង", "english": "mung bean pudding", "translit": "num l'peou" },
             { "khmer": "ក្រូឃ", "english": "kroeung (herb paste)", "translit": "kroeung" },
             { "khmer": "ឆ្ងាញ់", "english": "delicious", "translit": "chnganh" },
             { "khmer": "មិនសូវហឹរ", "english": "not too spicy", "translit": "min sov her" },
@@ -146,6 +213,11 @@ export const articles = [
         slug: 'sabaidee-fest-la-2025',
         title: 'Sabaidee Fest: Southeast Asian Music & Culture Celebrated in LA',
         date: '2025-07-12',
+        "image": {
+            "url": "/images/sabaidee-fest-2025.png",
+            "alt": "Sabaidee Fest stage with Southeast Asian performers and colorful decorations",
+            "caption": "Sabaidee Fest 2024 stage setup showcasing Southeast Asian cultural performances"
+        },
         khmer: [
             'ពិធីបុណ្យ Sabaidee Fest ដែលជាពិធីបុណ្យតន្ត្រី និងវប្បធម៌អាស៊ីអាគ្នេយ៍ធំបំផុតនៅសហរដ្ឋអាមេរិក នឹងត្រឡប់មកវិញជាលើកទី ៣ នៅថ្ងៃទី ១២-១៣ ខែកក្កិដា ឆ្នាំ ២០២៥។ ពិធីនេះនឹងធ្វើឡើងនៅ Gloria Molina Grand Park នៅទីក្រុង Los Angeles។',
             'ពិធីបុណ្យនេះនឹងមានសិល្បករជាង ២០ នាក់ពីប្រទេសចំនួន ៤ ដែលរួមមានសិល្បករឡាវ ខ្មែរ ថៃ និងហ្មុង។ សិល្បករឡាវដែលគេស្គាល់រួមមាន Sengthong, Sophana, និង Aii LA។',
@@ -192,6 +264,11 @@ export const articles = [
         slug: 'global-food-security-2025',
         title: 'UN Warns of Rising Global Food Insecurity Due to Climate and Conflict',
         date: '2025-06-20',
+        "image": {
+            "url": "/images/global-food-insecurity.png",
+            "alt": "A creative landscape illustration of global food insecurity showing a starving child and mother, dry cracked earth, empty bowl, conflict imagery, and a hopeful hand planting a sprout with the UN symbol in the background.",
+            "caption": "A haunting yet hopeful scene: a mother and child face hunger amidst climate disaster and conflict, while a sprout planted by hand suggests a future shaped by resilience and action."
+        },
         khmer: [
             'អង្គការសហប្រជាជាតិបានព្រមានថា ការសុវត្ថិភាពអាហារនៅលើពិភពលោកកំពុងធ្លាក់ចុះយ៉ាងចម្បង ដោយសារបញ្ហាអាកាសធាតុ បញ្ហាទំនាស់ និងការបាត់បង់ធនធានធម្មជាតិ។',
             'ការសិក្សាថ្មីបានបង្ហាញថា ប្រហែល ២៧០ លាននាក់កំពុងប្រឈមនឹងភាពអត់ឃ្លាន នៅក្នុងប្រទេសជាង ៥០ ដែលមានវិបត្តិបន្តបន្ទាប់។',
@@ -234,20 +311,25 @@ export const articles = [
         slug: 'sb62-climate-talks-absence-us-2025',
         title: 'U.S. Missing from Key UN Climate Talks in Bonn, Germany',
         date: '2025-06-17',
+        "image": {
+            "url": "/images/unfccc-sb62-bonn-2025.png",
+            "alt": "Illustration of a UN climate conference in Bonn, Germany, with a speaker addressing delegates in front of the UNFCCC backdrop and a visible absence of the U.S. delegation",
+            "caption": "A depiction of the 62nd UNFCCC session in Bonn, where technical climate negotiations continued without U.S. participation for the first time in 30 years."
+        },
         khmer: [
             'សន្និសីទកិច្ចការបរិស្ថានអនុយោបាយទី 62 (SB62) ត្រូវបានរៀបចំឡើងនៅ Bonn ប្រទេសអាល្លឺម៉ង់, ដោយសម្ព័ន្ធអាមេរិកមិនបានផ្ញើតំណាងចូលរួមឡើយ — ដើមការព្រួយបារម្ភសម្រាប់ការតភ្ជាប់អន្តរជាតិនៅថ្ងៃអនាគត។',
             'UNFCCC បានបញ្ជាក់ថា សន្និសីទនេះគឺជាឧបសម្ព័ន្ធពីរកណ្ដាលនៃ COP29 និង COP30 ដើម្បីពិគ្រោះយោបល់បច្ចេកទេសលើការប្រែប្រួលអាកាសធាតុ។ តំណាងចិន, អឺរ៉ុប និងប្រទេសអភិវឌ្ឍន៍ផ្សេងទៀតកំពុងត្រូវទ្រាំទ្រ និងរំពឹងឃើញការយកចិត្តទុកដាក់ពីអាមេរិក។',
-            'អ្នកយកចិត្តទុកដាក់ UN កំពុងគេហៅថា ជំនួបនេះ “មានអត្ថន័យជ្រៅល្អ” ក៏នៅពេលដែលពេលវេលាគឺ “ខ្លី” ដើម្បីទទួលបានចំណូលចិត្តជាក់លាក់នៃកម្មវិធីបរិស្ថានសកល។'
+            'អ្នកយកចិត្តទុកដាក់ UN កំពុងគេហៅថា ជំនួបនេះ "មានអត្ថន័យជ្រៅល្អ" ក៏នៅពេលដែលពេលវេលាគឺ "ខ្លី" ដើម្បីទទួលបានចំណូលចិត្តជាក់លាក់នៃកម្មវិធីបរិស្ថានសកល។'
         ],
         english: [
             'The 62nd session of UNFCCC subsidiary bodies (SB62) convened in Bonn, Germany, without any U.S. delegation present — marking the first time in 30 years America has skipped one of its biannual climate negotiation sessions.',
             'SB62 serves as the intersessional midpoint between COP29 in Baku and COP30 in Belém, focusing on detailed technical negotiations around climate policy and implementation.',
-            'UN Climate chief Simon Stiell highlighted that “time is short” and “the past 30 hours have been hard,” underscoring the urgency for tangible progress at the summit.'
+            'UN Climate chief Simon Stiell highlighted that "time is short" and "the past 30 hours have been hard," underscoring the urgency for tangible progress at the summit.'
         ],
         transliteration: [
             'Sannisut nit kechkar bariosathan anuyobay ti 62 (SB62) trov ban riapchhum laeung Bonn, Prates Alemang, doy samphendh Amérik min ban phnge tumnang cholruom laery — doch mean kar thmey ti Amérika has skip one of its biannual climate negotiation sessions.',
             'SB62 serves laeung intersessional midpoint mean COP29 Baku ning COP30 Belém, fokos pel karechday technikal negotiations rolou climate policy ning implementation.',
-            'UN Climate chief Simon Stiell highlighted that “time is short” ning “the past 30 hours have been hard,” underscoring urgency rouy chiank chea progress at the summit.'
+            'UN Climate chief Simon Stiell highlighted that "time is short" ning "the past 30 hours have been hard," underscoring urgency rouy chiank chea progress at the summit.'
         ],
         vocabulary: [
             { khmer: 'សន្និសីទ', english: 'conference/session', translit: 'sannisut' },
@@ -326,7 +408,7 @@ export const articles = [
         khmer: [
             'អ្នកវិទ្យាសាស្ត្រសមុទ្របានបញ្ជាក់ថា បាតុភូតផ្លាស់ប្តូរពណ៌ប៉ោលសមុទ្រដ៏ធំបំផុតត្រូវបានកំណត់ត្រាឡើង ដោយស្ថិតក្នុងសភាពធ្ងន់ធ្ងរពីសីតុណ្ហភាពសមុទ្រខ្ពស់ខុសធម្មតា ដែលប៉ះពាល់ដល់ប្រហែល ៨៤ ភាគរយនៃតំបន់ប៉ោលសមុទ្រទូទាំងពិភពលោក។ បាតុភូតនេះបានកើតឡើងចាប់តាំងពីដើមឆ្នាំ ២០២៣ ហើយឥឡូវនេះបានលើសវិបត្តិធ្ងន់ធ្ងរដទៃទៀតរួចមក។',
             'ការផ្លាស់ប្តូរពណ៌កើតឡើងនៅពេលប៉ោលសមុទ្របណ្តេញស្លែនដែលជួយបំរើជីវិតរបស់វា បណ្តាលឲ្យវាក្លាយទៅជាពណ៌ស ហើយងាយរងជំងឺនិងស្លាប់។ ការបាត់បង់ប៉ោលសមុទ្រយ៉ាងធំធេងនេះគឺជាភាពគំរាមកំហែងដល់ជីវចម្រុះសមុទ្រ និងជីវភាពរស់នៅរបស់មនុស្សរាប់រយលាននាក់ ដែលពឹងផ្អែកលើវាសម្រាប់អាហារ ទេសចរណ៍ និងការការពារឆ្នេរសមុទ្រ។',
-            'ជាឆ្លើយតប អ្នកជំនាញបរិស្ថាន និងអង្គការពាក់ព័ន្ធកំពុងអំពាវនាវឲ្យមានសកម្មភាពបន្ទាន់ ដើម្បីកាត់បន្ថយការបញ្ចេញឧស្ម័នកាបូន និងអនុវត្តយុទ្ធសាស្ត្រពង្រឹងភាពធន់ទ្រាំ។ វាជារួមមានការកំណត់តំបន់សមុទ្រដែលត្រូវការពារ ការកាត់បន្ថយភាពបំពុល និងការរារាំងការចាប់ត្រីលើសកម្រិត។'
+            'ជាឆ្លើយតប អ្នកជំនាញបរិស្ថាន និងអង្គការពាក់ព័ន្ធកំពុងអំពាវនាវឲ្យមានសកម្មភាពបន្ទាន់ ដើម្បីកាត់បន្ថយការបញ្ចេញឧស្ម័នកាបូន និងអនុវត្តយុទ្ធសាស្ត្រពង្រឹងភាពធន់ទ្រាំ។ វាជារួមមានការកំណត់តᆔបន់សមុទ្រដែលត្រូវការពារ ការកាត់បន្ថយភាពបំពុល និងការរារាំងការចាប់ត្រីលើសកម្រិត។'
         ],
         english: [
             'Marine scientists have confirmed the most widespread coral bleaching event ever recorded, with nearly 84% of coral reef areas across the globe showing signs of severe stress due to unusually high ocean temperatures. Triggered by ongoing climate change and ocean warming, this bleaching event—officially documented by the International Coral Reef Initiative—has been unfolding since early 2023 and now far exceeds the impact of previous crises, including the 2014–2017 global event.',
