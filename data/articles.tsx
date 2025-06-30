@@ -1,6 +1,50 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "seville-climate-debt-summit-protests",
+        "title": "Activists Demand Debt Cancellation and Climate Action Ahead of UN Development Summit",
+        "date": "2025-06-29",
+        "image": {
+            "url": "/images/seville-climate-protest.png",
+            "alt": "Large group of protesters in Seville holding banners in heat",
+            "caption": "Activists march through Seville demanding debt relief and climate justice ahead of UN summit"
+        },
+        "khmer": [
+            "ក្រុមសកម្មជនបានដើរតាមផ្លូវជាងរយគីឡូម៉ែត្រនៅ Seville ក្រោមកម្ដៅកកិត ដើម្បីទាមទារការលុបបាក់ទំនង់ និងសកម្មភាពអ klima ទុកចិត្តបន្ថែមមុនសម័យប្រជុំអង្គការសហប្រជាជាតិលើសាច់ធនការអភិវឌ្ឍន៍។",
+            "ពួកគេបានផ្ទុកស្លាកបណ្តឹងអំពីការខ្វះការ​​រំលែកការបរិភោគស្បៀង និងការចូលរួមពីថ្នាក់សម្បទានទិន្នន័យលើកទីមួយកន្លងមក។",
+            "មុននឹងចាប់ផ្តើមសន្និសីទ UN ថ្ងៃនេះ ប្រធានរដ្ឋាភិបាលស្បៀងទាំងអង់គ្លេស និងសហរដ្ឋអាមេរិកត្រូវបានត្អូញត្អែរ អំពីមិនបានគាំទ្រយ៉ាងគ្រប់គ្រាន់ចំពោះប្រទេសកំពុងអភិវឌ្ឍន៍។"
+        ],
+        "english": [
+            "Today in Seville, activists marched under scorching heat to demand debt cancellation, climate justice, and higher taxes on the wealthy ahead of a UN development finance summit.",
+            "Demonstrators carried striking banners highlighting hunger, inequality, and the lack of action from major economies in bridging global development gaps.",
+            "With the four‑day summit starting today, pressure is mounting on countries like the U.S. and UK for greater aid and policies that support developing nations’ resilience."
+        ],
+        "transliteration": [
+            "Krom sakkamchon ban daer tom plov cheang roi kilaomet nov Seville kroum komdav kart kamdav kam kat, doch tr age kar lup bak tumneang ning sakhakum klima tarket bomk kar chhnam sach kumneang UN sorosor pheap kar apheavoth nadom.",
+            "Pouk ke ban phtok slak bandeng ombei ka khach kar ruraler kar briphoch sbieng ning kar cholroer peak tha nak sbantheana teanadat ler ter muk kolang mok.",
+            "Mun neung chap phtoe smanosnhiet UN thngai nih, pdhean rothapeapheap sabieng teang Angkéy ning Somrach Amérika troung ban tortoré ombei min ban keamtor yeang krobkaun chomr chmpouh prates kompong apheavoth."
+        ],
+        "vocabulary": [
+            { "khmer": "កម្ដៅកកិត", "english": "scorching heat", "translit": "kamdav kakt" },
+            { "khmer": "ការលុបបាក់ទំនង់", "english": "debt cancellation", "translit": "kar lup bak tumneang" },
+            { "khmer": "សកម្មភាពអ klima", "english": "climate action", "translit": "sakmakpheab klima" },
+            { "khmer": "សម័យប្រជុំអង្គការសហប្រជាជាតិ", "english": "UN summit", "translit": "samay brochum angkar sahaprochacheat" },
+            { "khmer": "អភិវឌ្ឍន៍", "english": "development", "translit": "apheavoth" },
+            { "khmer": "ស្មើភាព", "english": "equality/justice", "translit": "smaerapheap" },
+            { "khmer": "អារម្មណ៍ទំពិស", "english": "public outrage", "translit": "arom teumpis" },
+            { "khmer": "ប្រទេសកំពុងអភិវឌ្ឍន៍", "english": "developing countries", "translit": "prates kompong apheavoth" },
+            { "khmer": "ផ្សារភូមិទូទៅ", "english": "global development gaps", "translit": "phsar phum ti tuteu" },
+            { "khmer": "អនុគណនេយ្យ", "english": "finance", "translit": "anukannaey" }
+        ],
+        "sources": [
+            {
+                "title": "Protesters demand debt cancellation, climate action ahead of UN summit",
+                "url": "https://www.reuters.com/world/protesters-demand-debt-cancellation-climate-action-ahead-un-summit-2025-06-29/"
+            }
+        ]
+    }
+    ,
+    {
         "slug": "khmer-thai-border-crisis",
         "title": "Khmer–Thai Border Crisis Escalates Amid Skirmishes, Political Fallout",
         "date": "2025-06-28",

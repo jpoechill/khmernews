@@ -8,6 +8,24 @@ import { articles } from '@/data/articles';
 export default function NewsIndex() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
+  const [viewCounts, setViewCounts] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    // Fetch view counts from API
+    const fetchViewCounts = async () => {
+      try {
+        const response = await fetch('/api/views');
+        if (response.ok) {
+          const data = await response.json();
+          setViewCounts(data.viewCounts || {});
+        }
+      } catch (error) {
+        console.error('Failed to fetch view counts:', error);
+      }
+    };
+
+    fetchViewCounts();
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,30 +52,67 @@ export default function NewsIndex() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       {/* Hero Section */}
-      <div className="sticky top-0 z-50 bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between flex-wrap gap-4">
-            <div>
-              <h1 className="text-2xl md:text-3xl font-bold mb-1">
-                📰 Khmer News & Articles
-              </h1>
-              <p className="text-sm text-blue-100">
-                Learn Khmer through real-world articles. Practice reading, grow your vocabulary, and explore side-by-side translations.
-              </p>
-            </div>
-            <div className="hidden sm:flex items-center gap-4 text-xs text-blue-200">
-              <div className="flex items-center gap-1">
-                <span className="w-1.5 h-1.5 bg-green-400 rounded-full"></span>
-                Multi-Language
+
+      <header className="relative bg-gradient-to-br from-indigo-800 via-indigo-700 to-blue-700 text-white overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-32"></div>
+          <div className="absolute bottom-0 right-1/3 w-48 h-48 bg-blue-400/10 rounded-full blur-2xl translate-y-24"></div>
+          <div className="absolute top-1/2 right-0 w-32 h-32 bg-indigo-300/8 rounded-full blur-xl translate-x-16"></div>
+        </div>
+
+        {/* Subtle pattern overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+            backgroundSize: '24px 24px'
+          }}></div>
+        </div>
+
+        <div className="relative max-w-6xl mx-auto px-6 py-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              {/* Enhanced logo/icon */}
+              <div className="relative">
+                <div className="w-14 h-14 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-lg">
+                  <span className="text-2xl">📰</span>
+                </div>
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full animate-pulse shadow-lg"></div>
               </div>
-              <div className="flex items-center gap-1">
-                <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
-                AI Enhanced
+
+              <div className="space-y-1">
+                <h1 className="text-4xl font-bold bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+                  Khmer News Reader
+                </h1>
+                <div className="flex items-center gap-2 text-indigo-200">
+                  <div className="w-1 h-1 bg-blue-300 rounded-full"></div>
+                  <p className="text-sm font-medium tracking-wide">
+                    Learn formal Khmer through current events
+                  </p>
+                  <div className="w-1 h-1 bg-blue-300 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+
+            {/* Optional navigation or stats */}
+            <div className="hidden md:flex items-center gap-6">
+              <div className="text-center">
+                <div className="text-xl font-bold text-white">24/7</div>
+                <div className="text-xs text-indigo-200 uppercase tracking-wider">Updates</div>
+              </div>
+              <div className="w-px h-0 bg-white/20"></div>
+              <div className="text-center">
+                <div className="text-xl font-bold text-white">ភាសាខ្មែរ</div>
+                <div className="text-xs text-indigo-200 uppercase tracking-wider">Language</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+        {/* Bottom shadow/border */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+      </header>
+
 
       <div className="max-w-6xl mx-auto px-6 py-0">
         <div className="mt-4 flex gap-2">
@@ -74,7 +129,7 @@ export default function NewsIndex() {
             onClick={() => setViewMode('list')}
             className={`px-3 py-1 rounded-full text-sm font-medium transition ${viewMode === 'list'
               ? 'bg-white text-blue-700 shadow'
-              : 'bg-blue-100 text-blue-200'
+              : 'bg-blue-100 text-blue-500'
               }`}
           >
             List View
@@ -155,6 +210,13 @@ export default function NewsIndex() {
                         {article.vocabulary?.length || 0} vocab
                       </div>
                     </div>
+                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                        <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                      </svg>
+                      {(viewCounts[article.slug] || 0).toLocaleString()} views
+                    </div>
                   </div>
                   <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
                     <div className="flex items-center justify-between">
@@ -208,7 +270,17 @@ export default function NewsIndex() {
                   )}
                   <div className="flex-1">
                     <h2 className="text-base font-semibold text-gray-900 mb-1">{article.title}</h2>
-                    <p className="text-xs text-gray-500">{article.date}</p>
+                    <div className="flex items-center gap-4 text-xs text-gray-500 mb-2">
+                      <span>{article.date}</span>
+                      <div className="flex items-center gap-1">
+                        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                          <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                        </svg>
+                        {(viewCounts[article.slug] || 0).toLocaleString()} views
+                      </div>
+                      <span>{article.vocabulary?.length || 0} vocab</span>
+                    </div>
                     <div className="flex flex-wrap gap-2 mt-2 text-xs">
                       <span className="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full">🇰🇭 Khmer</span>
                       <span className="bg-green-100 text-green-800 px-2 py-0.5 rounded-full">🇺🇸 English</span>
