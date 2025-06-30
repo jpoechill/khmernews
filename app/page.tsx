@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { articles } from '@/data/articles';
+import Footer from '@/components/Footer';
 
 export default function NewsIndex() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -100,10 +101,22 @@ export default function NewsIndex() {
                 <div className="text-xl font-bold text-white">24/7</div>
                 <div className="text-xs text-indigo-200 uppercase tracking-wider">Updates</div>
               </div>
-              <div className="w-px h-0 bg-white/20"></div>
+              <div className="w-px h-8 bg-white/20"></div>
               <div className="text-center">
                 <div className="text-xl font-bold text-white">ភាសាខ្មែរ</div>
                 <div className="text-xs text-indigo-200 uppercase tracking-wider">Language</div>
+              </div>
+              <div className="w-px h-8 bg-white/20"></div>
+              <div className="text-center">
+                <div className="text-xl font-bold text-white">{articles.length}</div>
+                <div className="text-xs text-indigo-200 uppercase tracking-wider">Articles</div>
+              </div>
+              <div className="w-px h-8 bg-white/20"></div>
+              <div className="text-center">
+                <div className="text-xl font-bold text-white">
+                  {articles.reduce((total, article) => total + (article.vocabulary?.length || 0), 0)}
+                </div>
+                <div className="text-xs text-indigo-200 uppercase tracking-wider">Vocabulary</div>
               </div>
             </div>
           </div>
@@ -305,29 +318,9 @@ export default function NewsIndex() {
             <p className="text-gray-500">Check back soon for new content!</p>
           </div>
         )}
-
-        {/* Footer Stats */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-6 bg-white rounded-2xl shadow-lg px-8 py-6 border border-gray-100">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600">{articles.length}</div>
-              <div className="text-sm text-gray-500">Articles</div>
-            </div>
-            <div className="w-px h-8 bg-gray-200"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-green-600">3</div>
-              <div className="text-sm text-gray-500">Languages</div>
-            </div>
-            <div className="w-px h-8 bg-gray-200"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-purple-600">
-                {articles.reduce((total, article) => total + (article.vocabulary?.length || 0), 0)}
-              </div>
-              <div className="text-sm text-gray-500">Vocabulary</div>
-            </div>
-          </div>
-        </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

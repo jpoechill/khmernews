@@ -191,18 +191,32 @@ export default async function NewsArticlePage({ params }: PageProps) {
                     }}
                 />
 
-                <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-10">
-                    <div className="max-w-5xl mx-auto px-6 py-4">
-                        <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-blue-700 hover:text-blue-900 transition-colors group">
-                            <svg className="w-4 h-4 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                            </svg>
-                            Back to Homepage
+                <div className="bg-white/90 backdrop-blur-md border-b border-gray-200/70 sticky top-0 z-50 shadow-sm">
+                    <div className="max-w-6xl mx-auto px-6 py-5">
+                        <Link
+                            href="/"
+                            className="inline-flex items-center gap-3 text-sm font-semibold text-slate-700 hover:text-blue-600 transition-all duration-200 group hover:gap-4"
+                        >
+                            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-all duration-200 group-hover:scale-110">
+                                <svg
+                                    className="w-4 h-4 transition-all duration-200 group-hover:-translate-x-0.5 group-hover:scale-110"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="2.5"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </div>
+                            <span className="relative">
+                                Back to Homepage
+                                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></span>
+                            </span>
                         </Link>
                     </div>
                 </div>
 
-                <div className="max-w-5xl mx-auto px-6 py-8 animate-fade-in-up">
+                <div className="max-w-6xl mx-auto px-6 py-8 animate-fade-in-up">
                     <div className="flex flex-col items-start text-center mb-4">
                         <h1 className="text-3xl md:text-xl font-bold text-gray-900 mb-2 leading-tight">
                             📰 {article.title}
@@ -335,8 +349,6 @@ export default async function NewsArticlePage({ params }: PageProps) {
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-green-600/70 text-sm font-medium pl-13">Clear understanding in English</p>
-                                <div className="w-16 h-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mt-3"></div>
                             </div>
 
                             {/* Content area with enhanced styling */}
@@ -404,8 +416,6 @@ export default async function NewsArticlePage({ params }: PageProps) {
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-purple-600/70 text-sm font-medium pl-13">Phonetic pronunciation guide</p>
-                                <div className="w-16 h-1 bg-gradient-to-r from-purple-500 to-violet-500 rounded-full mt-3"></div>
                             </div>
 
                             {/* Content area with enhanced styling */}
@@ -482,7 +492,7 @@ export default async function NewsArticlePage({ params }: PageProps) {
                                         {article.vocabulary.map(({ khmer, english, translit }, i) => (
                                             <tr key={i} className="group hover:bg-gradient-to-r hover:from-blue-50/50 hover:via-indigo-50/30 hover:to-cyan-50/50 transition-all duration-300">
                                                 <td className="py-4 px-6">
-                                                    <span className="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-200">
+                                                    <span className="text-xl font-medium text-gray-800 group-hover:text-blue-600 transition-colors duration-200">
                                                         {khmer}
                                                     </span>
                                                 </td>
