@@ -39,7 +39,7 @@ export default function NewsIndex() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <Header articles={articles} />
 
-      <div className="max-w-6xl mx-auto px-6 py-6">
+      <div className="max-w-5xl mx-auto px-6 py-6">
         {/* First 2 articles in 2-column grid */}
         {firstTwo.length > 0 && (
           <section className="grid md:grid-cols-2 gap-8 mb-12">
@@ -130,7 +130,7 @@ export default function NewsIndex() {
         )}
 
         {/* Common News Vocabulary Section */}
-        <section className="max-w-6xl mx-auto px-6 py-10 mb-16 bg-gradient-to-br from-blue-50 via-white to-cyan-50 rounded-xl border border-blue-100/60">
+        <section className="max-w-5xl mx-auto px-6 py-10 mb-16 bg-gradient-to-br from-blue-50 via-white to-cyan-50 rounded-xl border border-blue-100/60">
           <h3 className="text-xl font-bold text-blue-900 mb-2 flex items-center gap-2">
             <span role="img" aria-label="Vocabulary">🌟</span> Common News Vocabulary
           </h3>

@@ -39,7 +39,7 @@ export default function Header({ articles }: HeaderProps) {
                 <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-3xl transform -translate-x-32 -translate-y-32"></div>
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-r from-indigo-400 to-cyan-400 rounded-full blur-3xl transform translate-x-48 translate-y-48"></div>
             </div>
-            <div className="max-w-6xl mx-auto px-6 py-4 relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div className="max-w-5xl mx-auto px-6 py-4 relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="flex items-center gap-4">
                     <div className="relative">
                         <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center border border-blue-200 shadow">

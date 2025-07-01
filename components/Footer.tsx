@@ -13,7 +13,7 @@ export default function Footer() {
 
             {/* Footer Stats - positioned above main footer */}
             {/* {articles.length > 0 && (
-                <div className="max-w-6xl mx-auto px-4 pt-8 pb-4 relative z-10">
+                <div className="max-w-5xl mx-auto px-4 pt-8 pb-4 relative z-10">
                     <div className="flex justify-center">
                         <div className="inline-flex items-center gap-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/50 px-8 py-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
                             <div className="text-center group">
@@ -41,7 +41,7 @@ export default function Footer() {
                 </div>
             )} */}
 
-            <div className="max-w-6xl mx-auto px-4 py-8 relative z-10">
+            <div className="max-w-5xl mx-auto px-4 py-8 relative z-10">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     {/* Brand Section */}
