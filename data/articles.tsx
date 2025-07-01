@@ -256,7 +256,7 @@ export const articles = [
     {
         slug: 'sabaidee-fest-la-2025',
         title: 'Sabaidee Fest: Southeast Asian Music & Culture Celebrated in LA',
-        date: '2025-07-12',
+        date: '2025-06-27',
         "image": {
             "url": "/images/sabaidee-fest-2025.png",
             "alt": "Sabaidee Fest stage with Southeast Asian performers and colorful decorations",

@@ -1,75 +1,70 @@
 // components/Header.tsx
-export default function Header() {
+import React from 'react';
+
+// Define a type for vocabulary
+interface Vocabulary {
+    khmer: string;
+    english: string;
+    translit: string;
+}
+
+// Define a type for Article
+interface Article {
+    vocabulary?: Vocabulary[];
+    slug: string;
+    title: string;
+    date: string;
+    image?: {
+        url: string;
+        alt: string;
+        caption?: string;
+    };
+    english?: string[];
+    khmer?: string[];
+    transliteration?: string[];
+    sources?: { title: string; url: string }[];
+    // Add other known properties as needed
+    // [key: string]: unknown; // Remove 'any', use 'unknown' if you must allow extra fields
+}
+
+interface HeaderProps {
+    articles: Article[];
+}
+
+export default function Header({ articles }: HeaderProps) {
     return (
-        <header className="relative bg-gradient-to-br from-indigo-800 via-indigo-700 to-blue-700 text-white overflow-hidden">
-            {/* Background decorative elements */}
-            <div className="absolute inset-0">
-                <div className="absolute top-0 left-1/4 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-32"></div>
-                <div className="absolute bottom-0 right-1/3 w-48 h-48 bg-blue-400/10 rounded-full blur-2xl translate-y-24"></div>
-                <div className="absolute top-1/2 right-0 w-32 h-32 bg-indigo-300/8 rounded-full blur-xl translate-x-16"></div>
+        <header className="bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/50 border-b border-blue-100/50 mt-6 relative overflow-hidden rounded-b-2xl shadow-sm">
+            {/* Subtle Background Pattern */}
+            <div className="absolute inset-0 opacity-[0.02] pointer-events-none select-none">
+                <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-3xl transform -translate-x-32 -translate-y-32"></div>
+                <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-r from-indigo-400 to-cyan-400 rounded-full blur-3xl transform translate-x-48 translate-y-48"></div>
             </div>
-
-            {/* Subtle pattern overlay */}
-            <div className="absolute inset-0 opacity-10">
-                <div className="absolute inset-0" style={{
-                    backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
-                    backgroundSize: '24px 24px'
-                }}></div>
-            </div>
-
-            <div className="relative max-w-6xl mx-auto px-6 py-8">
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                        {/* Enhanced logo/icon */}
-                        <div className="relative">
-                            <div className="w-14 h-14 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-white/20 shadow-lg">
-                                <span className="text-2xl">📰asd</span>
-                            </div>
-                            <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full animate-pulse shadow-lg"></div>
-                        </div>
-
-                        <div className="space-y-1">
-                            <h1 className="text-4xl font-bold bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
-                                Khmer News Reader
-                            </h1>
-                            <div className="flex items-center gap-2 text-indigo-200">
-                                <div className="w-1 h-1 bg-blue-300 rounded-full"></div>
-                                <p className="text-sm font-medium tracking-wide">
-                                    Learn formal Khmer through current events
-                                </p>
-                                <div className="w-1 h-1 bg-blue-300 rounded-full"></div>
-                            </div>
+            <div className="max-w-6xl mx-auto px-6 py-4 relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div className="flex items-center gap-4">
+                    <div className="relative">
+                        <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center border border-blue-200 shadow">
+                            <span className="text-xl text-blue-700">📰</span>
                         </div>
                     </div>
-
-                    {/* Optional navigation or stats */}
-                    <div className="hidden md:flex items-center gap-6">
-                        <div className="text-center">
-                            <div className="text-xl font-bold text-white">24/7</div>
-                            <div className="text-xs text-indigo-200 uppercase tracking-wider">Updates</div>
-                        </div>
-                        <div className="w-px h-8 bg-white/20"></div>
-                        <div className="text-center">
-                            <div className="text-xl font-bold text-white">ភាសាខ្មែរ</div>
-                            <div className="text-xs text-indigo-200 uppercase tracking-wider">Language</div>
-                        </div>
+                    <div className="space-y-0.5">
+                        <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">MixNews</h1>
+                        <p className="text-sm text-slate-600 font-light">Learn Khmer through real news.</p>
                     </div>
                 </div>
-
-                {/* Bottom accent line */}
-                <div className="mt-6 flex items-center gap-2">
-                    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
-                    <div className="flex gap-1">
-                        <div className="w-2 h-2 bg-white/40 rounded-full"></div>
-                        <div className="w-2 h-2 bg-blue-300/60 rounded-full"></div>
-                        <div className="w-2 h-2 bg-white/40 rounded-full"></div>
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 mt-2 md:mt-0">
+                    {/* Stats */}
+                    <div className="flex items-center gap-4 text-xs text-slate-700 font-medium bg-white/70 px-3 py-1 rounded-lg border border-blue-100 shadow-sm">
+                        <span><span className="font-bold text-blue-700">{articles.length}</span> Articles</span>
+                        <span className="hidden md:inline">|</span>
+                        <span><span className="font-bold text-indigo-700">{articles.reduce((total, a) => total + (a.vocabulary?.length || 0), 0)}</span> Vocabulary</span>
                     </div>
-                    <div className="flex-1 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+                    {/* Auth */}
+                    <div className="flex items-center gap-2">
+                        <a href="/login" className="text-xs font-semibold text-blue-700 hover:text-indigo-700 px-3 py-1 rounded transition-colors">Login</a>
+                        <a href="/signup" className="text-xs font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-700 hover:to-blue-700 px-3 py-1 rounded shadow-sm transition-colors">Sign Up</a>
+                    </div>
                 </div>
             </div>
-
-            {/* Bottom shadow/border */}
-            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
         </header>
     );
 }
