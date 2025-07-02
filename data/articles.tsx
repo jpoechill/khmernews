@@ -1,6 +1,62 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "europe-heatwave-spain-england-2025",
+        "title": "Europe Sizzles: Heatwave Brings Record Temperatures to Spain and England",
+        "date": "2025-07-01",
+        "image": {
+            "url": "/images/europe-heatwave-2025.png",
+            "alt": "Heatwave temperature maps of Spain and UK",
+            "caption": "Heatwave envelops Spain and England with soaring temperatures"
+        },
+        "khmer": [
+            "ឥឡូវនេះ ប្រទេសអឺរ៉ុប កំពុងរួមឈឺក្រោមរន្ធត់កម្ដៅខ្លាំងជាពិសេសនៅប្រទេសស្ប៉ាញ និងអង់គ្លេស។",
+            "នៅស្ប៉ាញ ខ температуры បានកើនដល់ 42°C ដល់ 46°C នៅភាគខាងត្បូង ដោយមានការព្រួយបារម្ភអំពីសុខភាព និងការរំខានឧស្សាហកម្ម។",
+            "អង់គ្លេសក៏មានអាកាសធាតុកម្ដៅជាងមធ្យម ដែលអាចនាំឱ្យមានការស្លាប់ជាច្រើន ហើយរាជរដ្ឋាភិបាលបានដាក់ព្រមានសុខភាពនៅតំបន់ជិតឡុងដ៍។"
+        ],
+        "english": [
+            "A fierce heatwave is sweeping across Europe, bringing record heat to southern Spain and unusually warm conditions to England.",
+            "Temperatures in Spain have reached between 42 °C and 46 °C, prompting health warnings, investigations into heat-related deaths, and wildfire risk.",
+            "In England, the Met Office issued amber alerts as temperatures rose into the mid-30s °C, potentially causing hundreds of heat-related deaths."
+        ],
+        "transliteration": [
+            "Ĕlauv nih Prates Europe kompong ruom chheu kruom roth kômdaov khlang chea bises nov Prates Spain ning Angklés.",
+            "Nov Spain, kâmathieang ban kœn dal 42°C dal 46°C, doh mokni kar proreuy barom aombei sâkheaphap ning kar rumkhan usahâkôm.",
+            "Angklés koa mi akâs teatak kômdaov chea mneak tmoy, chŭng kunna mean kar slap jea charnanh, bae reyâthchéathâphéap ban dak prœmyan sâkheaphap nov tamneang cheait London."
+        ],
+        "vocabulary": [
+            { "khmer": "រន្ធត់កម្ដៅ", "english": "intense heatwave", "translit": "rɲɲtat kâmdaov" },
+            { "khmer": "ការព្រួយបារម្ភសុខភាព", "english": "health warnings", "translit": "kar pruwy barom sâkheaphap" },
+            { "khmer": "ហានិភ័យឈ្លុងព្រៃ", "english": "wildfire risk", "translit": "haniphay chhlong prei" },
+            { "khmer": "ព័ត៌មានហេតុស្លាប់ដោយកម្ដៅ", "english": "heat-related deaths", "translit": "poatʰorom het slap daoy kâmdaov" },
+            { "khmer": "អាកាសធាតុកម្ដៅ", "english": "high temperatures", "translit": "ākâs thĕat kâmdaov" },
+            { "khmer": "ការប្រមានសុខភាព", "english": "health alert", "translit": "kar brŏmian sâkheaphap" }
+        ],
+        "sources": [
+            {
+                "title": "Europe on alert as first major heatwave of 2025 pushes temperatures to 42C",
+                "url": "https://www.theguardian.com/environment/2025/jun/28/europe-on-alert-as-first-major-heatwave-of-2025-pushes-temperatures-to-42c"
+            },
+            {
+                "title": "Barcelona records hottest June and Eiffel Tower’s summit closes as Europe sizzles",
+                "url": "https://apnews.com/article/heat-wave-europe-france-spain-portugal-c6c9e6da7e02a77a0818c03ba976ecc8"
+            },
+            {
+                "title": "Barcelona investigates street sweeper's death as Spain swelters in heatwave",
+                "url": "https://www.reuters.com/business/environment/barcelona-investigates-street-sweepers-death-spain-swelters-heatwave-2025-07-01/"
+            },
+            {
+                "title": "Europe on alert as first major heatwave of 2025 pushes temperatures to 42C",
+                "url": "https://www.reuters.com/sustainability/cop/what-is-heat-dome-how-does-it-power-heatwaves-2025-06-30/"
+            },
+            {
+                "title": "Current heatwave 'likely to kill almost 600 people in England and Wales'",
+                "url": "https://www.theguardian.com/environment/2025/jun/21/heatwave-expected-deaths-england-and-wales-analysis"
+            }
+        ]
+    }
+    ,
+    {
         "slug": "seville-climate-debt-summit-protests",
         "title": "Activists Demand Debt Cancellation and Climate Action Ahead of UN Development Summit",
         "date": "2025-06-29",
