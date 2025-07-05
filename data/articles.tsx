@@ -1,6 +1,62 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "trump-big-beautiful-bill-2025",
+        "title": "Trump Unveils ‘Big Beautiful Bill’: Tax Cuts, Border Wall & Major Spending Shifts",
+        "date": "2025-07-03",
+        "image": {
+            "url": "/images/big-beautiful-bill-2025.png",
+            "alt": "Illustration of tax cuts, border wall construction, and public service cuts",
+            "caption": "The ‘Big Beautiful Bill’ bundling tax breaks, immigration funding, and social program cuts"
+        },
+        "khmer": [
+            "ច្បាប់ “One Big Beautiful Bill” របស់ត្រូវបានគណបក្សសេរីឆ្នើមបញ្ចូលការកាត់ពន្ធធម្មតា និងពន្ធលើtips និង overtime ឱ្យរឹងមាំជាអចិន្ត្រៃយ៍។",
+            "ច្បាប់នេះផ្គត់ផ្គង់ប្រាក់ជាង $45 ពាន់លានសម្រាប់ការចាប់ខ្លួនអ្នកអត្រា និង $46 ពាន់លានសម្រាប់ជួសជុលស្នូលគម្របដែន។",
+            "ដើមទុនដល់ Medicaid និង SNAP ត្រូវបានកាត់បន្ថយយ៉ាងសំខាន់ ដែលអាចធ្វើឲ្យមនុស្សរាប់លានគ្រួសារបាត់សេវាកម្មសុខភាព។"
+        ],
+        "english": [
+            "The bill permanently extends Trump’s 2017 tax cuts, enacts new deductions for tips, overtime, and U.S.-made vehicle purchases.",
+            "It allocates around $45 billion for detention, $46 billion for border wall construction, and adds billions for ICE and deportations.",
+            "Sharp cuts to Medicaid and SNAP include work requirements, potentially slipping nearly 12 million people from coverage, according to the CBO."
+        ],
+        "transliteration": [
+            "Chbab “One Big Beautiful Bill” robos Trump banha kâ bâng kar kât pon thommâda ning pon ler tips ning overtime aoy rengmao chea achintraiy.",
+            "Chbab nih phgott pong brak cheang $45 pun lian samrab kar chhab khluon neak atr ning $46 pun lian samrab juah juol snaoul kâmrobdaen.",
+            "Daem ton dol Medicaid ning SNAP trauv ban kat banhuy yeang somkhan, del anak thveu oy mneak robos piablan krousar bat sevakampheah sokkhpap."
+        ],
+        "vocabulary": [
+            { "khmer": "ការកាត់ពន្ធ", "english": "tax cuts", "translit": "kar kât pon" },
+            { "khmer": "ពន្ធលើ tips និង overtime", "english": "tax on tips and overtime", "translit": "pon ler tips ning overtime" },
+            { "khmer": "ស្នូលគម្របដែន", "english": "border wall", "translit": "snaoul kâmrob daen" },
+            { "khmer": "ការចាប់ខ្លួន និងការបដិសេធ", "english": "detention and deportations", "translit": "kar chhab khluon ning kar badeseth" },
+            { "khmer": "ការកាត់បន្ថយ Medicaid និង SNAP", "english": "cuts to Medicaid and SNAP", "translit": "kar kât bântuey Medicaid ning SNAP" },
+            { "khmer": "ការទាមទារ to work", "english": "work requirement", "translit": "kar teamtear to work" }
+        ],
+        "sources": [
+            {
+                "title": "What is in Trump’s major tax bill? Extended cuts, deportations and more",
+                "url": "https://www.theguardian.com/us-news/2025/jul/01/what-is-in-big-beautiful-bill-trump"
+            },
+            {
+                "title": "4 ways Trump’s ‘big beautiful’ tax bill could affect your wallet",
+                "url": "https://www.businessinsider.com/big-beautiful-bill-affects-taxes-student-loans-maga-accounts-2025"
+            },
+            {
+                "title": "How the ‘Big Beautiful Bill’ will allow President Trump to finally finish the border wall",
+                "url": "https://nypost.com/2025/07/02/us-news/how-the-big-beautiful-bill-will-allow-president-trump-to-finally-finish-the-border-wall/"
+            },
+            {
+                "title": "The ‘Big Beautiful Bill’ Would Pour Billions Into ICE's Budget",
+                "url": "https://time.com/7299360/big-beautiful-bill-trump-ice-immigration/"
+            },
+            {
+                "title": "What Trump's massive bill would actually do, explained",
+                "url": "https://www.vox.com/politics/418599/one-big-beautiful-bill-act-details-explained"
+            }
+        ]
+    }
+    ,
+    {
         "slug": "europe-heatwave-spain-england-2025",
         "title": "Europe Sizzles: Heatwave Brings Record Temperatures to Spain and England",
         "date": "2025-07-01",

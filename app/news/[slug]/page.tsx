@@ -243,12 +243,12 @@ export default async function NewsArticlePage({ params }: PageProps) {
                                 <div className="flex items-center gap-1">
                                     <span className="text-xs text-gray-400">Text Size:</span>
                                     <button id="decrease-text-size" className="text-xs px-2 py-1 text-gray-600 border border-gray-200 bg-white" title="Decrease text size">A-</button>
-                                    <span className="text-xs text-gray-500 px-1" id="text-size-display">24px</span>
+                                    <span className="text-xs text-gray-500 px-1" id="text-size-display">20px</span>
                                     <button id="increase-text-size" className="text-xs px-2 py-1 text-gray-600 border border-gray-200 bg-white" title="Increase text size">A+</button>
                                     <button id="reset-text-size" className="text-xs px-2 py-1 text-gray-600 border border-gray-200 bg-white" title="Reset text size">↺</button>
                                 </div>
                             </div>
-                            <div className="text-base space-y-2 text-gray-900 khmer-text" style={{ fontSize: '24px' }}>
+                            <div className="text-base space-y-2 text-gray-900 khmer-text" style={{ fontSize: '20px' }}>
                                 {article.khmer.map((para, i) => (
                                     <p key={i} dangerouslySetInnerHTML={{ __html: highlightKhmer(para) }} />
                                 ))}
@@ -296,7 +296,7 @@ export default async function NewsArticlePage({ params }: PageProps) {
                             <table className="w-full text-lg text-left text-gray-700">
                                 <thead>
                                     <tr>
-                                        <th className="py-2 px-2 font-semibold">ភាសាខ្មែរ</th>
+                                        <th className="py-2 px-2 font-semibold">Khmer</th>
                                         <th className="py-2 px-2 font-semibold">English</th>
                                         <th className="py-2 px-2 font-semibold">Pronunciation</th>
                                     </tr>
