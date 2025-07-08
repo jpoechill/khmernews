@@ -33,7 +33,7 @@ interface HeaderProps {
 
 export default function Header({ articles }: HeaderProps) {
     return (
-        <header className="bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/50 border-b border-blue-100/50 mt-6 relative overflow-hidden rounded-b-2xl shadow-sm">
+        <header className="bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/50 border-b border-blue-100/50 mt-0 relative overflow-hidden rounded-b-2xl shadow-sm">
             {/* Subtle Background Pattern */}
             <div className="absolute inset-0 opacity-[0.02] pointer-events-none select-none">
                 <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-3xl transform -translate-x-32 -translate-y-32"></div>

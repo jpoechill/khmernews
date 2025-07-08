@@ -1,6 +1,53 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "trump-threatens-10pct-tariffs-brics-2025",
+        "title": "Trump Threatens Extra 10% Tariffs on BRICS-Aligned Countries",
+        "date": "2025-07-07",
+        "image": {
+            "url": "/images/trump-brics-tariff-illustration-2025.png",
+            "alt": "Trump speaking at podium with flags, emphasizing tariffs",
+            "caption": "Trump warns of a 10% tariff on countries aligning with BRICS’ “anti‑American” stance"
+        },
+        "khmer": [
+            "ប្រធានាធិបតីត្រូវបានអំពាវនាវថា អាចដាក់ពន្ធបន្ថែម ១០% លើប្រទេសណាដែលសហការជាមួយក្រុម BRICS ដោយសារមានគោលបំណង “ប្រឆាំងអាមេរិក។”",
+            "លោកបានប្រកាសលើ Truth Social ថា៖ “ប្រទេសណាដែល…នឹងទទួលពន្ធបន្ថែម ១០%.”",
+            "ប៉ុន្តែមានភាពច្របូកច្របល់អំពីពេលវេលា និងវិធានការអនុវត្ត ដោយរដ្ឋាភិបាលពន្យារពន្ធរហូតដល់១ សីហា។"
+        ],
+        "english": [
+            "President Trump warns he may impose an extra 10 percent tariff on any country that aligns with BRICS’ “anti‑American” policies.",
+            "He posted on Truth Social: “Any Country aligning themselves with the Anti‑American policies of BRICS, will be charged an ADDITIONAL 10% Tariff.”",
+            "Confusion remains over timing and enforcement, as the administration delays tariff implementation until August 1, despite negotiation deadlines on July 9."
+        ],
+        "transliteration": [
+            "Pratheynâ thĭ pi Trov banh ap thveu tha ach dae ppthân ban theam 10% le prathêy neak sokkhâr chea BRICS doy sâ som khol bomnŏng “prâchang America.”",
+            "Lŏk ban prakas leu Truth Social tha: “Pratheyn na…neak drobal pthân bân theam 10%.”",
+            "Pont tae mean pheap chhrapoukchhrapol ompi pel wela ning vithéan kar anuyuth doch daoy rothiphéab pont y nhoat der rôvat 1 Śângha."
+        ],
+        "vocabulary": [
+            { "khmer": "ពន្ធបន្ថែម", "english": "extra tariff", "translit": "pon bântéam" },
+            { "khmer": "ប្រទេសសហការជាមួយ", "english": "aligned with", "translit": "pratheyn sokhâr chea mui" },
+            { "khmer": "បញ្ជាក់លើ Truth Social", "english": "posted on Truth Social", "translit": "bân jeak leu Truth Social" },
+            { "khmer": "ពេលវេលា និងការអនុវត្ត", "english": "timing and enforcement", "translit": "pel wela ning kar anuyuth" },
+            { "khmer": "ពន្យារពន្ធ", "english": "tariff delay", "translit": "pon y ria ponth" }
+        ],
+        "sources": [
+            {
+                "title": "EU's von der Leyen has 'good exchange' on trade with Trump, as US threatens Brics group with extra 10% tariff",
+                "url": "https://www.theguardian.com/business/live/2025/jul/07/donald-trump-threatens-10-tariff-brics-trade-war-deadline-deals-letters-business-live-news-updates"
+            },
+            {
+                "title": "Morning Bid: Trump, tariffs and Tesla",
+                "url": "https://www.reuters.com/world/china/global-markets-view-usa-2025-07-07/"
+            },
+            {
+                "title": "5 Things to Know Before the Stock Market Opens",
+                "url": "https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-july-07-2025-11767264"
+            }
+        ]
+    }
+    ,
+    {
         "slug": "trump-big-beautiful-bill-2025",
         "title": "Trump Unveils ‘Big Beautiful Bill’: Tax Cuts, Border Wall & Major Spending Shifts",
         "date": "2025-07-03",

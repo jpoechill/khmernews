@@ -1,22 +1,28 @@
 import { getArticleViewCount, incrementArticleView } from '@/lib/viewCounts';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export async function GET(request: Request, context: any) {
+interface RouteContext {
+  params: Promise<{ slug: string }>;
+}
+
+export async function GET(request: Request, { params }: RouteContext) {
   try {
-    const viewCount = await getArticleViewCount(context.params.slug);
+    const { slug } = await params;
+    const viewCount = await getArticleViewCount(slug);
     return Response.json({ viewCount });
-  } catch {
+  } catch (error) {
+    console.error('Error in GET /api/views/[slug]:', error);
     // Fallback to 0 if there's an error
     return Response.json({ viewCount: 0 });
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export async function POST(request: Request, context: any) {
+export async function POST(request: Request, { params }: RouteContext) {
   try {
-    const newCount = await incrementArticleView(context.params.slug);
+    const { slug } = await params;
+    const newCount = await incrementArticleView(slug);
     return Response.json({ viewCount: newCount });
-  } catch {
+  } catch (error) {
+    console.error('Error in POST /api/views/[slug]:', error);
     // Fallback to 0 if there's an error
     return Response.json({ viewCount: 0 });
   }
