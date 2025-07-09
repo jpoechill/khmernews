@@ -1,6 +1,45 @@
 // /data/articles.ts
 export const articles = [
     {
+        "slug": "us-measles-cases-highest-in-six-years-2025",
+        "title": "US Measles Cases at Highest Level in Six Years, CDC Reports",
+        "date": "2025-07-09",
+        "image": {
+            "url": "/images/us-measles-outbreak-2025.png",
+            "alt": "CDC measles testing sign outside clinic",
+            "caption": "A sign reading 'measles testing' in Texas as cases surge"
+        },
+        "khmer": [
+            "ករណីជម្ងឺ measles នៅសហរដ្ឋអាមេរិកឡើងដល់កម្រិតខ្ពស់បំផុតក្នុង៦ឆ្នាំចុងក្រោយ។",
+            "តាមទិន្នន័យCDC ករណីដែលបានផ្ទៀងផ្ទាត់ប្រហែល 1,288 គឺលើសពីឆ្នាំ 2019 ដែលមាន 1,274។",
+            "ការកើនឡើងសំខាន់ត្រូវបានជំរុញដោយការបោះជំងឺខ្សោយនៅក្នុងកូនក្មេងនៅខេត្តบางជាប់Texas និង New Mexico។"
+        ],
+        "english": [
+            "US measles cases reached 1,288 as of July 9, the highest since 2019 when 1,274 cases were recorded.",
+            "Health officials link the surge to declining vaccination rates among children, notably in Texas and New Mexico.",
+            "The US had achieved measles elimination status in 2000 — a status now threatened by the outbreak."
+        ],
+        "transliteration": [
+            "Kornay chmngeu measles nov Saharot Americ loeung dol komrith khpos bat knong 6 chhnam jong chnea.",
+            "Tam donnneaCDC kornay del ban pthiang phti robos 1,288 kue leuh-soa pi chhnam 2019 del mean 1,274.",
+            "Kar koen laeung somkhan trowb ban chumrohn dai kar bah chmngue khsaoy nov knong kaun koch nov khett bang jap Texas neng New Mexico."
+        ],
+        "vocabulary": [
+            { "khmer": "ករណីជម្ងឺ", "english": "disease cases", "translit": "kornay chmngeu" },
+            { "khmer": "ផ្ទៀងផ្ទាត់", "english": "confirmed", "translit": "pthieang phti" },
+            { "khmer": "ការបោះជំងឺ", "english": "vaccination", "translit": "bah chmngue" },
+            { "khmer": "ខ្សោយ", "english": "low/weakened", "translit": "khsaoy" },
+            { "khmer": "ស្ថានភាពការពារ", "english": "immunity/elimination status", "translit": "stheanpheab karpiar" }
+        ],
+        "sources": [
+            {
+                "title": "US measles cases at highest level in six years, CDC says",
+                "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-measles-cases-reach-highest-level-six-years-1288-cdc-says-2025-07-09/"
+            }
+        ]
+    }
+    ,
+    {
         "slug": "trump-threatens-10pct-tariffs-brics-2025",
         "title": "Trump Threatens Extra 10% Tariffs on BRICS-Aligned Countries",
         "date": "2025-07-07",
